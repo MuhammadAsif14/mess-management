@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Modify and add UI components as needed for breakfast details -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breakfast Details"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Example TextViews for displaying breakfast details -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/breakfasttitle"
+        android:text="Title: Your Breakfast Title"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/breakfastdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description: Your Breakfast Description"
+        android:textSize="16sp"/>
+
+</LinearLayout>

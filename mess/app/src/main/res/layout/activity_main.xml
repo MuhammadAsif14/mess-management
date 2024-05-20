@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:id="@+id/welcome_to_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Mess Management"
+        android:textSize="32sp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/adminRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin" />
+
+        <RadioButton
+            android:id="@+id/studentRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:text="Next"
+        android:onClick="onNextButtonClick"/>
+</LinearLayout>
